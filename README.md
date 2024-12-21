@@ -14,14 +14,14 @@ Porque la transparencia no es solo una palabra bonita.
 - No pedimos más información de la necesaria para que todo funcione correctamente.  
 - Si decides borrar tus datos, puedes hacerlo sin problemas (aunque no podemos borrar los turnos de tu realidad, eso es otro tema).  
 
-[Leer la política completa aquí](#).  
+[Leer la política completa aquí](privacidad.html).  
 
 ## URLs importantes  
 Aquí tienes las principales, siempre a tu disposición:  
 
-- **Política de privacidad:** [política](#)  
-- **Términos y condiciones:** [términos](#)  
-- **Sitio oficial de GlobalForce:** [globalforce](https://kiosko.groundforce.aero)  
+- **Política de privacidad:** [política](privacidad.html)  
+- **Términos y condiciones:** [términos](terminos.html)  
+- **Sitio oficial de GlobalForce:** [globalforce](https://globalforce.es)  
 - **Soporte técnico:** [soporte](#)  
 
 ## ¿Por qué esto existe?  
