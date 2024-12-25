@@ -7,40 +7,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a GlobalForce</h1>
-        <p>Donde organizamos turnos, horarios, y tu paciencia (con estilo).</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="privacidad.html">Política de Privacidad</a></li>
-            <li><a href="terminos.html">Términos y Condiciones</a></li>
-            <li><a href="capturas.html">Capturas de Pantalla</a></li>
-            <li><a href="sitemap.html">Mapa del Sitio</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section>
-            <h2>Acerca de GlobalForce</h2>
-            <p>GlobalForce es tu aliado en la gestión de turnos y horarios. Estamos aquí para ayudarte a mantener el control y, con suerte, evitar madrugones inesperados.</p>
-        </section>
-        <section>
-            <h2>Destacados</h2>
-            <p>Echa un vistazo a nuestras herramientas y funcionalidades más útiles:</p>
+           <nav>
             <ul>
-                <li>Gestión avanzada de turnos.</li>
-                <li>Estimación de nóminas basada en tus horarios.</li>
-                <li>Sincronización directa con el sistema de kiosco.</li>
+              <li><a href="#" onclick="loadPage('home.html')">Inicio</a></li>
+              <li><a href="#" onclick="loadPage('features.html')">Características</a></li>
+              <li><a href="#" onclick="loadPage('download.html')">Descargar</a></li>
+              <li><a href="#" onclick="loadPage('support.html')">Soporte</a></li>
+              <li><a href="#" onclick="loadPage('privacidad.html')">Política de Privacidad</a></li>
+              <li><a href="#" onclick="loadPage('terminos.html')">Términos y Condiciones</a></li>
+              <li><a href="#" onclick="loadPage('capturas.html')">Capturas de Pantalla</a></li>
+              <li><a href="#" onclick="loadPage('sitemap.html')">Mapa del Sitio</a></li>
             </ul>
-        </section>
+           </nav>
+           <button id="sidebar-toggle" onclick="toggleSidebar()">☰ Menú</button>
+
+            <div id="sidebar">
+              <a href="#" onclick="loadPage('home.html')">Inicio</a>
+              <a href="#" onclick="loadPage('features.html')">Características</a>
+              <a href="#" onclick="loadPage('download.html')">Descargar</a>
+              <a href="#" onclick="loadPage('support.html')">Soporte</a>
+              <a href="#" onclick="loadPage('privacidad.html')">Política de Privacidad</a>
+              <a href="#" onclick="loadPage('terminos.html')">Términos y Condiciones</a>
+              <a href="#" onclick="loadPage('capturas.html')">Capturas de Pantalla</a>
+              <a href="#" onclick="loadPage('sitemap.html')">Mapa del Sitio</a>
+            </div>
+            <div id="content">
+                <header>
+                    <h1>Bienvenido a GlobalForce</h1>
+                    <p>Donde organizamos turnos, horarios, y tu paciencia (con estilo).</p>
+                </header>
+              <p>Gestiona turnos y nóminas con eficiencia y estilo.</p>
+            </div>
+            
     </main>
-
-    <footer>
-        <p>&copy; 2024 GlobalForce. Porque todos necesitamos un poco de orden en el caos.</p>
-    </footer>
-
     <script src="scripts.js"></script>
 </body>
+</html>
+
+
+
 </html>

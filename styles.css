@@ -5,7 +5,10 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+  overflow-x: hidden;
+
 }
+
 
 /* Encabezado */
 header {
@@ -23,6 +26,98 @@ header p {
     font-style: italic;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Sidebar Styles */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #0056b3;
+  padding: 20px 10px;
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+#sidebar a {
+  color: #fff;
+  margin: 15px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+}
+#sidebar a:hover {
+  background-color: #003f7f;
+  transform: translateX(5px);
+}
+#sidebar-toggle {
+    display: none;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+/* Content Styles */
+#content {
+  margin-left: 20px;
+  padding: 4px;
+  transition: margin-left 0.3s ease-in-out;
+}
+h1 {
+  color: #0056b3;
+}
+p, ul {
+  line-height: 1.6;
+}
+ul li::before {
+  content: "✔";
+  color: #0056b3;
+  margin-right: 8px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  #sidebar {
+    transform: translateX(-100%);
+  }
+  #content {
+    margin-left: 0;
+  }
+  #sidebar.active {
+    transform: translateX(0);
+  }
+
+  #sidebar-toggle {
+    display: block;
+  }
+  #sidebar{
+    display: flex;
+  }
+
+  nav{
+    display: none;
+}
+}
+
+
+
+
+
+
+
+
 /* Navegación */
 nav {
     background-color: #004080;
@@ -37,6 +132,12 @@ nav ul {
     gap: 20px;
 }
 
+nav ul li::before {
+    content: "";
+    color: #0056b3;
+    margin-right: 8px;
+  }
+
 nav ul li a {
     text-decoration: none;
     color: #fff;
@@ -44,14 +145,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+     background-color: #0a1e57;
+     padding-block: 10px;
 }
 
 /* Contenido principal */
 main {
-    padding: 20px;
+    padding: 0px;
     background-color: #fff;
-    margin: 20px;
+    margin: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
