@@ -1,10 +1,26 @@
+:root {
+  --primary-color: #0073e6;
+  --secondary-color: #0056b3;
+  --accent-color: #004080;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --white-color: #fff;
+  --hover-color: #0a1e57;
+  --sitemap-border-color: #007bff;
+  --sitemap-background-color: #f9f9f9;
+  --sitemap-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
 /* Estilos globales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color:var(--background-color);
+    color: var(--text-color);
   overflow-x: hidden;
 
 }
@@ -12,14 +28,16 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #0073e6;
-    color: #fff;
+    background-color:var(--secondary-color);
+    color:var(--white-color);
     text-align: center;
-    padding: 20px 10px;
+    padding: 30px 10px;
+    margin-top: 0px;
 }
 
 header h1 {
     margin: 0;
+    color: var(--white-color);
 }
 
 header p {
@@ -37,7 +55,7 @@ a {
   left: 0;
   width: 200px;
   height: 100%;
-  background-color: #0056b3;
+  background-color:var(--secondary-color);
   padding: 20px 10px;
   display: none;
   flex-direction: column;
@@ -46,7 +64,7 @@ a {
   transition: transform 0.3s ease-in-out;
 }
 #sidebar a {
-  color: #fff;
+  color:var(--white-color);
   margin: 15px 0;
   padding: 10px;
   width: 100%;
@@ -54,16 +72,29 @@ a {
   transition: background 0.3s, transform 0.3s;
 }
 #sidebar a:hover {
-  background-color: #003f7f;
+  background-color:var(--accent-color);
   transform: translateX(5px);
 }
+
+toolbar {
+
+  width: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--accent-color);
+    padding: 30px;
+    position: fixed;
+}
+
+
 #sidebar-toggle {
     display: none;
   position: fixed;
   top: 15px;
   right: 15px;
-  background: #0056b3;
-  color: white;
+  background: var(--accent-color);
+  color: var(--white-color);
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
@@ -77,14 +108,14 @@ a {
   transition: margin-left 0.3s ease-in-out;
 }
 h1 {
-  color: #0056b3;
+  color: var(--secondary-color);
 }
 p, ul {
   line-height: 1.6;
 }
 ul li::before {
   content: "✔";
-  color: #0056b3;
+  color: var(--primary-color);
   margin-right: 8px;
 }
 /* Responsive Design */
@@ -98,6 +129,15 @@ ul li::before {
   #sidebar.active {
     transform: translateX(0);
   }
+
+  toolbar {
+    display: flex;
+  }
+
+  header {
+    margin-top: 60px;
+  }
+  
 
   #sidebar-toggle {
     display: block;
@@ -120,7 +160,7 @@ ul li::before {
 
 /* Navegación */
 nav {
-    background-color: #004080;
+    background-color: var(--accent-color);
     padding: 10px 0;
 }
 
@@ -134,31 +174,31 @@ nav ul {
 
 nav ul li::before {
     content: "";
-    color: #0056b3;
+    color: var(--secondary-color);
     margin-right: 8px;
   }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white-color);
     font-weight: bold;
 }
 
 nav ul li a:hover {
-     background-color: #0a1e57;
+     background-color: var(--hover-color);
      padding-block: 10px;
 }
 
 /* Contenido principal */
 main {
     padding: 0px;
-    background-color: #fff;
+    background-color: var(--background-color);
     margin: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 main h2 {
-    color: #0073e6;
+    color: var(--primary-color);
 }
 
 ul {
@@ -168,21 +208,14 @@ ul {
 
 /* Pie de página */
 footer {
-    background-color: #004080;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
 }
 
-toolbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0056b3;
-    color: #fff;
-    padding: 30px;
-}
+
 
 /* Estilos para el sitemap */
 .sitemap-visual {
@@ -211,12 +244,12 @@ toolbar {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color:var(--background-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .sitemap-branches a {
     text-decoration: none;
-    color: #007bff;
+    color: var(--primary-color);
     font-weight: bold;
 }

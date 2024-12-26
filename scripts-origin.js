@@ -14,6 +14,16 @@ document.addEventListener("DOMContentLoaded", () => {
      const recipient = 'globalforceschedule@gmail.com'; 
      const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
      window.location.href = mailtoLink;
+     
+});
+
+// Escucha todos los clics en los enlaces con la clase "load-link"
+document.querySelectorAll('.load-link').forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); // Evita que el navegador siga el enlace y modifique la URL
+    const page = this.getAttribute('href'); // Obtén el valor del atributo href
+    loadPage(page); // Llama a tu función para cargar la página
+  });
 });
 
    
