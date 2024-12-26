@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
      const body = encodeURIComponent('Nombre: ' + name + '\nEmail: ' + email + '\n\nMensaje:\n' + message);
  
      // Ocultar el correo en el código fuente
-     const recipient = 'globalforceschedule@gmail.com'; // Cambia esto por tu correo
+     const recipient = 'globalforceschedule@gmail.com'; 
      const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
      window.location.href = mailtoLink;
 });
@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
           })
           .then(html => {
             document.getElementById('content').innerHTML = html;
+            closeSidebar();
+
           })
           .catch(error => {
             document.getElementById('content').innerHTML = '<h1>Error</h1><p>No se pudo cargar la página.</p>';
@@ -38,6 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
       sidebar.classList.toggle('active');
       const content = document.getElementById('content');
       content.style.marginLeft = sidebar.classList.contains('active') ? '220px' : '0';
+    }
+
+    function closeSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.remove('active');
+      const content = document.getElementById('content');
+      content.style.marginLeft = '0';
     }
 
 

@@ -175,6 +175,15 @@ footer {
     margin-top: 20px;
 }
 
+toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0056b3;
+    color: #fff;
+    padding: 30px;
+}
+
 /* Estilos para el sitemap */
 .sitemap-visual {
     display: flex;

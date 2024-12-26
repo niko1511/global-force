@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlobalForce - Bienvenido</title>
+    <title>GlobalForce</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<toolbar>
+  <button id="sidebar-toggle" onclick="toggleSidebar()">☰ Menú</button>
+ </toolbar>
 <body>
     <main>
            <nav>
@@ -20,7 +23,7 @@
               <li><a href="#" onclick="loadPage('sitemap.html')">Mapa del Sitio</a></li>
             </ul>
            </nav>
-           <button id="sidebar-toggle" onclick="toggleSidebar()">☰ Menú</button>
+          
 
             <div id="sidebar">
               <a href="#" onclick="loadPage('home.html')">Inicio</a>
@@ -32,10 +35,7 @@
               <a href="#" onclick="loadPage('capturas.html')">Capturas de Pantalla</a>
               <a href="#" onclick="loadPage('sitemap.html')">Mapa del Sitio</a>
             </div>
-            <div id="content">
-                <header>
-                    
-            </div>
+            <div id="content"></div>
             
     </main>
     <script src="scripts-origin.js"></script>
