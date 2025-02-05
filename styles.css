@@ -14,7 +14,87 @@
 
 
 
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+.icon-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icon-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.features {
+    background-color: #eef7ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.features li::before {
+    content: "✅";
+    margin-right: 10px;
+}
+
+
+
 /* Estilos globales */
+
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.download-btn {
+    display: inline-block;
+    background-color: #0073e6;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: #005bb5;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -33,7 +113,11 @@ header {
     text-align: center;
     padding: 30px 10px;
     margin-top: 0px;
+  font-size: 24px;
+
 }
+
+
 
 header h1 {
     margin: 0;
@@ -108,11 +192,15 @@ toolbar {
   padding: 4px;
   transition: margin-left 0.3s ease-in-out;
 }
-h1 {
+h1, h2 {
   color: var(--secondary-color);
 }
+
+
 p, ul {
   line-height: 1.6;
+  font-size: 16px;
+
 }
 ul li::before {
   content: "✔";
@@ -214,6 +302,8 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+    font-size: 14px;
+
 }
 
 
