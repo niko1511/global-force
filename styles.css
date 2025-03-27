@@ -12,6 +12,38 @@
 }
 
 
+#screenshots-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px; /* Espacio entre elementos */
+  justify-content: center;
+  padding: 20px;
+}
+
+.screenshot-item {
+  text-align: center; /* Centra la imagen y el texto */
+}
+
+.screenshot {
+  width: 100%; /* Se adapta al tamaño del contenedor */
+  max-width: 250px; /* Tamaño máximo */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  transition: transform 0.3s ease-in-out;
+}
+
+.screenshot:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+}
+
+
 
 
 
@@ -79,19 +111,42 @@
 
 
 .download-btn {
-    display: inline-block;
-    background-color: #0073e6;
-    color: white;
-    padding: 12px 20px;
-    margin-top: 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  background-color: #0F9D58; /* Color oficial de Google Play */
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  gap: 8px; /* Espacio entre logo y texto */
 }
 
 .download-btn:hover {
     background-color: #005bb5;
+}
+
+.download-btn img {
+  width: 50%; /* Logo más pequeño */
+  height: auto;
+}
+
+.download-btn span {
+  font-size: 0.9em; /* Texto más compacto */
+}
+
+.download-btn:hover {
+  background-color: #0C7C44;
+}
+
+.store-info {
+  text-align: center;
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 4px;
 }
 
 
